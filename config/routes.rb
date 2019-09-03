@@ -1,4 +1,6 @@
-Rails.application.routes.draw do
-  resources :costomers
-  root "costumer#index"
+Rails.application.routes.draw do  
+  get 'costomers/index'
+  root :to => 'costomers#index'
+  resources :costomers 
 end
+
