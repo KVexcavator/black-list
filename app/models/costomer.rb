@@ -1,3 +1,4 @@
 class Costomer < ApplicationRecord
-  scope :refused, -> {where(blacklist: false)}
+  scope :frends, -> {where(blacklist: false)}
+  scope :refused, -> {where(blacklist: true)}
 end

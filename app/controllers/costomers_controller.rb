@@ -1,9 +1,14 @@
 class CostomersController < ApplicationController
   before_action :set_costomer, only: [:show, :edit, :update, :destroy]
 
-  # GET /costomers
+  # GET /costomers whitelist
   # GET /costomers.json
   def index
+    @costomers = Costomer.frends
+  end
+  
+  # GET /costomers blacklist
+  def black
     @costomers = Costomer.refused
   end
 
