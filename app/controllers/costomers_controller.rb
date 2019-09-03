@@ -4,7 +4,7 @@ class CostomersController < ApplicationController
   # GET /costomers
   # GET /costomers.json
   def index
-    @costomers = Costomer.all
+    @costomers = Costomer.refused
   end
 
   # GET /costomers/1
